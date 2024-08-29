@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: black;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+
+  #logo {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+
+  #nav-links-wrapper {
+    display: flex;
+    gap: 3rem;
+    margin-right: 4rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+#section1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 90vh;
+  font-size: 4rem;
+
+  #title-gray {
+    color: rgb(85, 85, 85);
+  }
+
+  #title-white {
+    margin-top: -1rem;
+  }
+
+  #hero {
+    background: no-repeat url("./assets/hero.png");
+    background-size: cover;
+    border-radius: 100px;
+    width: 80%;
+    height: 55vh;
+    margin-top: 1.5rem;
+  }
+}
+
+#section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  #title-gray {
+    font-size: 3rem;
+    color: rgb(85, 85, 85);
+  }
+
+  #title-white {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+
+  #features-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 35%;
+
+    p {
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    #join-us-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 150px;
+      height: 35px;
+      padding: 10px;
+      font-size: 0.9rem;
+      border-radius: 12px;
+      background: #cda5d5;
+      color: #06050f;
+    }
+  }
+
+  #usp-div {
+    position: relative;
+    width: 35%;
+    height: 40vh;
+  }
+
+  .usp-item {
+    position: absolute;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 50px;
+    border: white solid 1px;
+    /* font-weight: 300; */
+  }
+
+  .usp-gray {
+    color: rgb(85, 85, 85);
+    border-color: rgb(85, 85, 85);
+  }
+
+  .usp-white {
+    color: #fff;
+  }
+
+  .usp-main {
+    background: linear-gradient(
+      278.85deg,
+      #f5c4ff 3.36%,
+      #fbe4ff 48.72%,
+      #edff91 99.06%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+#section3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #edff91;
+  margin-top: 2rem;
+
+  #section3-wrapper {
+    margin: 0 0 3rem 0;
+  }
+
+  .card {
+    display: inline-block;
+    border-radius: 8px;
+    margin: 0 5rem 0 0rem;
+    text-align: center;
+    width: 200px;
+
+    .card-content {
+      display: none;
+    }
+
+    img {
+      height: 300px;
+      width: 250px;
+      border-radius: 25px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin: 5px 0 5px;
+    }
+    p {
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+  }
+
+  .card:hover {
+    .card-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: inherit;
+      margin-top: -305px;
+      width: 250px;
+      height: 300px;
+      border-radius: 25px;
+      backdrop-filter: blur(20px);
+    }
+  }
+
+  #title-gray {
+    color: rgb(85, 85, 85);
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  #title-black {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    color: black;
+  }
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 3rem 0 3rem 0;
+
+  #joinus-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgb(25, 25, 25);
+    border-right: 2px solid rgb(25, 25, 25);
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 20%;
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    #joinus {
+      margin-bottom: 2rem;
+    }
+  }
+
+  #contactus-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-right: 2px solid rgb(25, 25, 25);
+    padding-right: 2rem;
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    #contactus {
+      margin-bottom: 2rem;
+    }
+  }
+
+  #privacypolicy-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: rgb(85, 85, 85);
+    div {
+      margin-bottom: 2rem;
+    }
+
+    b {
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
